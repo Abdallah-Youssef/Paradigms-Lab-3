@@ -1,1 +1,1 @@
-"# Paradigms-Lab-3" 
+# Paradigms-Lab-3
