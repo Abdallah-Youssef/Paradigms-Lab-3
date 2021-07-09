@@ -1,11 +1,13 @@
-class Apple ( weight:Int,
- left : Fruit,
- right : Fruit,
-              var Asshole : Int = 0)
-  extends Fruit(weight, left , right)  {
-  def this () = this(0, NilNode, NilNode)
-  def this (weight: Int) = this(weight, NilNode, NilNode)
+class Apple (private var w:Int) extends
+  Fruit(w) with OvalShaped{
+  def this(w:Int, o:Int) {
+    this(w)
+    ovality = o
+  }
+  override def toString() : String =
+    "Apple " + weight
 
-  override def toString() : String = "Apple " + getWeight
+   def toStringVerbose() : String =
+     s"Apple weight $weight, ovality $ovality"
 
 }
