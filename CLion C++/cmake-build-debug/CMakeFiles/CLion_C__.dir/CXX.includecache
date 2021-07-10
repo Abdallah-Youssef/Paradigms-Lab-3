@@ -6,81 +6,27 @@
 
 #IncludeRegexTransform: 
 
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Apple.h
-OvalShaped.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/OvalShaped.h
-
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Avocado.h
-Fruit.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Fruit.h
-OvalShaped.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/OvalShaped.h
-string
+D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/BST.cpp
+iostream
 -
+BST.h
+D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/BST.h
 
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/BST.h
+D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/BST.h
 vector
 -
 memory
 -
 Node.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Node.h
+D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Node.h
 
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Berry.h
-TinyFruit.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/TinyFruit.h
+D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Fruit.h
 string
 -
 
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Fruit.h
-string
--
-
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Grape.h
-TinyFruit.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/TinyFruit.h
-
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Grapple.h
-utility
--
-Apple.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Apple.h
-Grape.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Grape.h
-
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Node.h
+D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Node.h
 vector
 -
 Fruit.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Fruit.h
-
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/OvalShaped.h
-string
--
-OvalShaped.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/OvalShaped.h
-
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/TinyFruit.h
-Fruit.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Fruit.h
-
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/main.cpp
-iostream
--
-BST.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/BST.h
-OvalShaped.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/OvalShaped.h
-TinyFruit.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/TinyFruit.h
-Berry.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Berry.h
-Grape.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Grape.h
-Avocado.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Avocado.h
-Apple.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Apple.h
-Grapple.h
-D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Grapple.h
+D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Fruit.h
 

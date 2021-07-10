@@ -44,8 +44,21 @@ int main() {
     tree -> insert(new Node((Apple*)grapple));
 
     tree -> iterate();
-    (tree -> magnifyByType(Fruit::FruitType::AVOCADO, 20));
     std::cout << "----" << std::endl;
+
+    tree -> magnifyByType(Fruit::FruitType::AVOCADO, 100);
+
     tree -> iterate();
+    std::cout << "----" << std::endl;
+
+
+    std::cout << tree->findLightest()->toString() << "\n" << tree->findHeaviest()->toString() <<"\n";
+    std::cout << "----" << std::endl;
+
+    printNodes(tree->filterByWeight(50));
+    std::cout << "----" << std::endl;
+
+    printNodes(tree->filterByType(Fruit::FruitType::AVOCADO));
+    std::cout << "----" << std::endl;
     return 0;
 }

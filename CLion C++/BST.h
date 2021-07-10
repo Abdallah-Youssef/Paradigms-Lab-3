@@ -23,8 +23,8 @@ public:
     void insert(Node *);
     void iterate();
     Nodes filterByWeight(int);
-
-    void magnifyByType(Fruit::FruitType type, int weight);
+    Nodes filterByType(Fruit::FruitType);
+    void magnifyByType(Fruit::FruitType, int);
     Node* findHeaviest();
     Node* findLightest();
 

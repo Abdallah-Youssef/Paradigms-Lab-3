@@ -7,7 +7,7 @@ class Apple (private var w:Int) extends
   override def toString() : String =
     "Apple " + weight
 
-   def toStringVerbose() : String =
+  override def toStringVerbose() : String =
      s"Apple weight $weight, ovality $ovality"
 
 }

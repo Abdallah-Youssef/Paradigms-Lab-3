@@ -1,4 +1,3 @@
 trait TinyFruit {
-  var tininess: Int
-  def getTininess: Int = tininess
+  var tininess: Int = 0
 }

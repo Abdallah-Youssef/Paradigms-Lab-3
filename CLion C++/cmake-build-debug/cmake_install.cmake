@@ -1,4 +1,4 @@
-# Install script for directory: D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++
+# Install script for directory: D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

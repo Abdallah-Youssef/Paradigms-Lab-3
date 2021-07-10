@@ -52,6 +52,17 @@ Nodes BST::filterByWeight(int w) {
 
     return filtered;
 }
+Nodes BST::filterByType(Fruit::FruitType type) {
+    Nodes nodes =  traversal();
+    Nodes filtered;
+    for (Node* node : nodes){
+        if (node ->fruit->getType() == type)
+            filtered.push_back(node);
+    }
+
+    return filtered;
+}
+
 
 void BST::magnifyByType(Fruit::FruitType type, int weight) {
     Nodes nodes = traversal();
@@ -59,21 +70,26 @@ void BST::magnifyByType(Fruit::FruitType type, int weight) {
         if (node->fruit->getType() == type)
             node->fruit->weight += weight;
     }
+
+    root = nullptr;
+    for (Node* node : nodes){
+        insert(new Node(node -> fruit));
+    }
 }
 
 Node* BST::findHeaviest(){
     Node* u = root;
     while (u != nullptr){
-        if (u -> right != nullptr)
+        if (u -> right == nullptr)
             return u;
         u = u -> right;
     }
     return nullptr;
 }
-Node* BST::findLightest() {}(){
+Node* BST::findLightest() {
     Node* u = root;
     while (u != nullptr){
-        if (u -> left != nullptr)
+        if (u -> left == nullptr)
             return u;
         u = u -> left;
     }

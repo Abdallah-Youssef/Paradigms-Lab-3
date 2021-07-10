@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug"/>
+				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CLion_C__">
-				<Option output="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/CLion_C__.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug"/>
+				<Option output="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/CLion_C__.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 CLion_C__"/>
-					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 CLion_C__"/>
+					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CLion_C__/fast">
-				<Option output="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/CLion_C__.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug"/>
+				<Option output="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/CLion_C__.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,73 +53,73 @@
 					<Add directory="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 CLion_C__/fast"/>
-					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 CLion_C__/fast"/>
+					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug"/>
+				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug"/>
+				<Option working_dir="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Apple.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Apple.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Avocado.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Avocado.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/BST.cpp">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/BST.cpp">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/BST.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/BST.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Berry.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Berry.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Fruit.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Fruit.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Grape.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Grape.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Grapple.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Grapple.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Node.cpp">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Node.cpp">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Node.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Node.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/OvalShaped.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/OvalShaped.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/TinyFruit.h">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/TinyFruit.h">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/main.cpp">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/main.cpp">
 			<Option target="CLion_C__"/>
 		</Unit>
-		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/CMakeLists.txt">
+		<Unit filename="D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

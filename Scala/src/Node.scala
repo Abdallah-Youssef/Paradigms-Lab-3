@@ -89,6 +89,11 @@ case class Node (var fruit: Fruit,
     println()
   }
 
+  def IterateVerbose(): Unit = {
+    traversal.foreach(n => printf(n.toStringVerbose + ", "))
+    println()
+  }
+
   //a method that prints the nodes of a given fruit type ordered by. weight.
   // For example, get an ordered list of all apples in the tree
   def filterByType(c : Class[_]):ArrayBuffer[Fruit] = {
@@ -125,15 +130,15 @@ case class Node (var fruit: Fruit,
     }
   }
 
-  def minNode(): Node ={
-    left match{
-      case NilNode =>  this
-      case Node(_, l, _, _) => l.minNode()
-    }
+  private def minNode(): Node ={
+    if (left.isNil())
+      this
+    else left.minNode()
   }
 
   def isNil():Boolean = false;
 
 
-  override def toString: String = "Node : " + fruit.toString
+  override def toString: String = fruit.toString
+  def toStringVerbose: String = fruit.toStringVerbose + "\n"
 }

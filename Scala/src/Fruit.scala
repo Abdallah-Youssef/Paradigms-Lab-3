@@ -9,5 +9,6 @@ abstract class Fruit(var weight:Int){
   def setWeight(newWeight: Int): Unit = {weight = newWeight}
 
   override def toString : String = "fruit : " + weight
+  def toStringVerbose : String = "fruit : " + weight + ", verbose"
   def isNilFruit:Boolean = false
 }

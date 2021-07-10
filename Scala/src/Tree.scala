@@ -16,12 +16,11 @@ class Tree(var root:Node = NilNode) {
   }
 
   def delete(node : Node): Unit = {
-    if (size <= 1) {
+    if (size <= 1)
       root = NilNode
-    } else {
+    else {
       root.delete(node)
-      if (node == root)
-        root = dummyParent.left
+      root = dummyParent.left
     }
     size = max(0, size - 1)
   }
@@ -32,6 +31,9 @@ class Tree(var root:Node = NilNode) {
 
   // a method that prints the in-order traversal of the tree.
   def Iterate(): Unit = root.Iterate()
+  // a method that prints the in-order traversal of the tree.
+  def IterateVerbose(): Unit = root.IterateVerbose()
+
 
   //a method that prints the nodes of a given fruit type ordered by. weight.
   // For example, get an ordered list of all apples in the tree
@@ -45,7 +47,10 @@ class Tree(var root:Node = NilNode) {
   //  a method that increases the weight of the nodes of a given fruit type by the given amount.
   //  For example, add 200 grams to all bananas in the tree.
   def magnifyByType(c : Class[_], w: Int): Unit =  {
-    traversal.foreach(u => if (u.getClass == c) u.fruit.weight += w)
+    val queue: ArrayBuffer[Node] = traversal.filter(u => u.fruit.getClass == c)
+    queue.foreach(u => delete(u))
+    queue.foreach(u => u.fruit.weight = u.fruit.weight + w)
+    queue.foreach(u => insert(u.fruit))
   }
 
 

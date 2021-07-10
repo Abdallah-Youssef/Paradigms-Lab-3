@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/BST.cpp" "D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/CMakeFiles/CLion_C__.dir/BST.cpp.obj"
-  "D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/Node.cpp" "D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/CMakeFiles/CLion_C__.dir/Node.cpp.obj"
-  "D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/main.cpp" "D:/College/2nd year - 2nd semester/Programming Paradigms/CLion C++/cmake-build-debug/CMakeFiles/CLion_C__.dir/main.cpp.obj"
+  "D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/BST.cpp" "D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/CMakeFiles/CLion_C__.dir/BST.cpp.obj"
+  "D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/Node.cpp" "D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/CMakeFiles/CLion_C__.dir/Node.cpp.obj"
+  "D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/main.cpp" "D:/College/2nd year - 2nd semester/Programming Paradigms/Assignments/Fruit Tree/CLion C++/cmake-build-debug/CMakeFiles/CLion_C__.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
