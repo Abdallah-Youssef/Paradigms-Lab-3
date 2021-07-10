@@ -1,5 +1,5 @@
 # Paradigms-Lab-3
 ## contributers:
-* Abdallah Youssef 18015026
-* Mohamed ELgazzar 18011626
-* Abdelrahman Ashraf 18012538
+* Abdallah Yasser Youssef 18015026
+* Mohamed Mofrah ELgazzar 18011626
+* Abdelrahman Ashraf Elmeniawy 18012538
