@@ -5,11 +5,11 @@ object Test {
 
     val tree = new Tree()
     tree.insert(new Apple(1, 10))
+    tree.insert(new Grape(5, 50))
+    tree.insert(new Apple(6, 2))
     tree.insert(new Avocado(2, 20))
     tree.insert(new Berry(3, 30))
     tree.insert(new Avocado(4, 20))
-    tree.insert(new Grape(5, 50))
-    tree.insert(new Apple(6, 2))
 
 
 

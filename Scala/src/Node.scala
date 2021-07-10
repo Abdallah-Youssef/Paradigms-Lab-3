@@ -126,7 +126,7 @@ case class Node (var fruit: Fruit,
   def findLightest(): Fruit = {
     left match{
       case NilNode => this.fruit
-      case _ => left.findHeaviest()
+      case _ => left.findLightest()
     }
   }
 

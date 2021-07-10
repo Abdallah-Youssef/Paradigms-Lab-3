@@ -37,10 +37,10 @@ int main() {
     Grapple* grapple = new Grapple(50, 50, 50, "black","purple");
 
 
-    tree -> insert(new Node(apple));
     tree -> insert(new Node(grape));
     tree -> insert(new Node(berry));
     tree -> insert(new Node(avocado));
+    tree -> insert(new Node(apple));
     tree -> insert(new Node((Apple*)grapple));
 
     tree -> iterate();
