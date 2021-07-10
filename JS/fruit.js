@@ -4,182 +4,173 @@ var Fruit = {
   rightFruit: null,
   leftFruit: null,
   getShape(){
-       
-  },
-
-  getName() {
-    return this.Name;
-  },
-  setName(Name) {
-    this.Name = Name;
-  },
-
-  getWeight() {
-    return this.weight;
-  },
-  setWeight(newWeight) {
-    this.weight = newWeight;
-  },
-
-  getRightFruit() {
-    return this.rightFruit;
-  },
-  getLeftFruit() {
-    return this.leftFruit;
-  },
-
-  setRightFruit(newRightFruit) {
-    this.rightFruit = newRightFruit;
-  },
-  setLeftFruit(newLeftFruit) {
-    this.leftFruit = newLeftFruit;
+       return("No shape Specified")
   },
 };
 
 var FruitTree = {
   RootFruit: null,
-  setRootFruit(newRootFruit) {
-    this.RootFruit = newRootFruit;
-  },
-  getRootFruit(newRootFruit) {
+  modifcationList : [],
+  insertFruit(fruit) {
+    if (this.RootFruit == null) {
+      this.RootFruit = fruit;
+    } else {
+      this.insertNode(this.RootFruit, fruit);
+    }
     return this.RootFruit;
   },
-
-  insert(fruit) {
-    this.RootFruit = inserter.insertFruit(this.RootFruit, fruit);
+  insertNode(root, fruit) {
+    if (root.weight < fruit.weight) {
+      if (root.rightFruit === null) root.rightFruit=fruit;
+      else this.insertNode(root.rightFruit, fruit);
+    } else {
+      if (root.leftFruit === null) root.leftFruit=fruit;
+      else this.insertNode(root.leftFruit, fruit);
+    }
+  },
+ 
+   remove : function(weight) {
+    this.RootFruit = this.removeNode(this.RootFruit, weight);
   },
 
+  removeNode (node, key) {
+    if (node === null)
+      return null;
+    else if (key < node.weight) {
+      node.leftFruit = this.removeNode(node.leftFruit, key);
+      return node;
+    } else if (key > node.weight) {
+      node.rightFruit = this.removeNode(node.rightFruit, key);
+      return node;
+    } else {
+      if (node.leftFruit === null && node.rightFruit === null) {
+        node = null;
+        return node;
+      }
+      if (node.leftFruit === null) {
+        node = node.rightFruit;
+        return node;
+      }
+      else if (node.rightFruit === null) {
+        node = node.leftFruit;
+        return node;
+      }
+      var aux = this.findMinNode(node.rightFruit);
+      node.weight = aux.weight;
+      node.Name=aux.Name;
+      node.rightFruit = this.removeNode(node.rightFruit, aux.weight);
+      return node;
+    }
+  },
+
+  //---------------------MAPPERS---------------------------------
+
+  checkType(fruit,Type){
+    if (
+      fruit.__proto__ === Type ||
+      fruit.__proto__.__proto__ === Type ||
+      fruit.__proto__.__proto__.__proto__ === Type
+    )
+    printer.print(fruit) 
+    
+  },
+
+  checkWeight(fruit,Type,weight){
+    if (fruit.weight>weight)
+      printer.print(fruit) 
+  },
+
+  modifyWeight(fruit,Type,weight,addedWeight){
+    if (
+      fruit.__proto__ === Type ||
+      fruit.__proto__.__proto__ === Type ||
+      fruit.__proto__.__proto__.__proto__ === Type
+    ){
+    var temp = Object.create(fruit.__proto__)
+    temp.weight=fruit.weight+addedWeight;
+    temp.Name=fruit.Name  
+    this.remove.call(this,fruit.weight)
+    this.modifcationList.push(temp)
+    }
+  },
+
+  //------------------------------------------------------------
+
+  //----------------------------HELPERS----------------------------
+
+  inorder(fruit,fun,Type,weight,addedWeight) {
+    if (fruit !== null) {
+      this.inorder(fruit.leftFruit,fun,Type,weight,addedWeight);
+
+      fun.call(this,fruit,Type,weight,addedWeight) //HIGHER ORDER FUNCTION
+      
+      this.inorder(fruit.rightFruit,fun,Type,weight,addedWeight);
+    }
+  },
+
+  fixTree(){
+    for (var i = 0; i <= this.modifcationList.length; i++) { this.insertFruit.call(this,this.modifcationList.shift()) }
+    this.modifcationList=[]
+  },
+
+  findMaxNode(root)
+  {
+       if(root.rightFruit === null)
+       return root;
+   else
+       return this.findMaxNode(root.rightFruit);
+  },
+  findMinNode(root)
+  {
+       if(root.leftFruit === null)
+       return root;
+   else
+       return this.findMinNode(root.leftFruit);
+  },
+
+
+  //------------------------------------------------------
+
   iterate() {
-    iterator.inorder(this.RootFruit);
+    this.inorder(this.RootFruit,printer.print,null,null)
   },
 
   filterByType(Type) {
-    FilterHepler.filter(this.RootFruit, Type);
+    this.inorder(this.RootFruit,this.checkType,Type,null,null)
   },
   filterByWeight(Weight){
-     FilterWeightHepler.filter(this.RootFruit,Weight)
+    this.inorder(this.RootFruit,this.checkWeight,null,Weight,null)
   },
-  magnifyByType(Type, Weight) {Magnifer.magnifer(this.RootFruit,Type,Weight,AddWeight)},
+  magnifyByType(Type, Weight) {
+    this.inorder(this.RootFruit,this.modifyWeight,Type,null,Weight)
+    this.fixTree()
+  },
   findHeaviest() {
-     return  heiver.findMaxNode(this.RootFruit)
+     return  this.findMaxNode(this.RootFruit)
   },
-  findLightest() {return  lighter.findMinNode(this.RootFruit)},
+  findLightest() {return  this.findMinNode(this.RootFruit)},
 };
 
-//----------------HELPERS VARS IN DELEGATION---------------------
-
-var inserter = {
-  insertFruit(root, fruit) {
-    if (root == null) {
-      root = fruit;
-    } else {
-      this.insertNode(root, fruit);
-    }
-    return root;
+//DELEGATION
+var printer={
+  print(fruit){
+    console.log("Fruit Name : "+ fruit.Name + " \\ Weight : " + fruit.weight);
   },
-  insertNode(root, fruit) {
-    if (root.getWeight() < fruit.getWeight()) {
-      if (root.getRightFruit() === null) root.setRightFruit(fruit);
-      else this.insertNode(root.getRightFruit(), fruit);
-    } else {
-      if (root.getLeftFruit() === null) root.setLeftFruit(fruit);
-      else this.insertNode(root.getLeftFruit(), fruit);
-    }
-  },
-};
-
-var iterator = {
-  inorder(fruit) {
-    if (fruit !== null) {
-      this.inorder(fruit.getLeftFruit());
-      console.log(fruit.getName() + " -> " + fruit.getWeight());
-      this.inorder(fruit.getRightFruit());
-    }
-  },
-};
-
-var FilterHepler = {
-  filter(fruit, Type) {
-    if (fruit !== null) {
-      this.filter(fruit.getLeftFruit(), Type);
-      if (
-        fruit.__proto__ === Type ||
-        fruit.__proto__.__proto__ === Type ||
-        fruit.__proto__.__proto__.__proto__ === Type
-      )
-        console.log(fruit.getName() + " -> " + fruit.getWeight());
-      this.filter(fruit.getRightFruit(), Type);
-    }
-  },
-};
-
-var FilterWeightHepler = {
-     filter(fruit, weight) {
-       if (fruit !== null) {
-         this.filter(fruit.getLeftFruit(), weight);
-         if (fruit.getWeight()>weight)
-           console.log(fruit.getName() + " -> " + fruit.getWeight());
-         this.filter(fruit.getRightFruit(), weight);
-       }
-     },
-   };
-
-var Magnifer = {
-  magnifer(fruit,Type,addedWeight, weightModifyFun) {
-    if (fruit !== null) {
-      this.magnifer(fruit.getLeftFruit(), Type,addedWeight,weightModifyFun);
-      if (
-        fruit.__proto__ === Type ||
-        fruit.__proto__.__proto__ === Type ||
-        fruit.__proto__.__proto__.__proto__ === Type
-      )
-          fruit.setWeight(weightModifyFun(fruit.weight,addedWeight))
-        console.log(fruit.getName() + " -> " + fruit.getWeight());
-      this.magnifer(fruit.getRightFruit(), Type,addedWeight,weightModifyFun);
-    }
-  },
-};
-
-var heiver={
-     findMaxNode(root)
-     {
-          if(root.getRightFruit() === null)
-          return root;
-      else
-          return this.findMaxNode(root.getRightFruit());
-     }
-}
-
-var lighter={
-     findMinNode(root)
-     {
-          if(root.getLeftFruit() === null)
-          return root;
-      else
-          return this.findMinNode(root.getLeftFruit());
-     }
 }
 
 //---------------------------------------------------------------------
 
-//----------HIGHER ORDER FUNCTION----------------
-
-function AddWeight(oldWeight, NewWeight) {
-  return oldWeight + NewWeight;
-}
-
-//-------------------------------
 
 /*TYPES HIRARICIES*/
 //------------------Level 1--------------//
 var ovalShapedFruit = Object.create(Fruit);
-ovalShapedFruit.getShape=function(){return "Iam Oval Shaped Fruit"}
+ovalShapedFruit.getShape=function(){return "Iam Oval Shaped Fruit"} //METOHD OVERRIDE
 
 var LongShapedFruit = Object.create(Fruit);
-LongShapedFruit.getShape=function(){return "Iam Long Shaped Fruit"}
+LongShapedFruit.getShape=function(){return "Iam Long Shaped Fruit"} //METOHD OVERRIDE
 
 var tinyFruit = Object.create(Fruit);
-tinyFruit.getShape=function(){return "Iam Circular tiny Shaped Fruit"}
+tinyFruit.getShape=function(){return "Iam tiny Shaped Fruit"} //METOHD OVERRIDE
 
 //--------------------Level 2---------------------//
 
@@ -196,98 +187,106 @@ var Banana = Object.create(LongShapedFruit)
 var Plantain = Object.create(LongShapedFruit) 
 
 var BlueBerry = Object.create(Berry);
+BlueBerry.getShape=function(){return "Iam Circular tiny Shaped Fruit"} //METOHD OVERRIDE
                                                   //berries Tiny circular shaped fruits 
 var CranBerry = Object.create(Berry);
+BlueBerry.getShape=function(){return "Iam Circular tiny Shaped Fruit"} //METOHD OVERRIDE
 //--------------------------------------------------//
 
 /*-------SAMPLES----------------------------------------*/
 var apple1 = Object.create(apple);
-apple1.setName("apple 1");
-apple1.setWeight(120);
+apple1.Name="apple 1";
+apple1.weight=120;
 
 var apple2 = Object.create(apple);
-apple2.setWeight(7000);
-apple2.setName("apple 2");
+apple2.weight=7000;
+apple2.Name="apple 2";
 
 var Avocadro1 = Object.create(Avocadro);
-Avocadro1.setWeight(40);
-Avocadro1.setName("Avocadro 1");
+Avocadro1.weight=40;
+Avocadro1.Name="Avocadro 1";
 
 var Avocadro2 = Object.create(Avocadro);
-Avocadro2.setWeight(200);
-Avocadro2.setName("Avocadro 2");
+Avocadro2.weight=200;
+Avocadro2.Name="Avocadro 2";
 
 
 var Banana1 = Object.create(Banana);
-Banana1.setWeight(4000);
-Banana1.setName("Banana 1");
+Banana1.weight=4000;
+Banana1.Name="Banana 1";
 
 var Banana2 = Object.create(Banana);
-Banana2.setWeight(950);
-Banana2.setName("Banana 2");
+Banana2.weight=950;
+Banana2.Name="Banana 2";
 
 var Plantain1 = Object.create(Plantain) 
-Plantain1.setWeight(2500)
-Plantain1.setName("Plantain 1")
+Plantain1.weight=2500
+Plantain1.Name="Plantain 1"
 
 var Plantain2 = Object.create(Plantain) 
-Plantain2.setWeight(3000)
-Plantain2.setName("Plantain 2")
+Plantain2.weight=3000
+Plantain2.Name="Plantain 2"
 
 var BlueBerry1 = Object.create(BlueBerry);
-BlueBerry1.setWeight(230);
-BlueBerry.setName("Bluberry 1");
+BlueBerry1.weight=230;
+BlueBerry.Name="Bluberry 1";
 
 var BlueBerry2 = Object.create(BlueBerry);
-BlueBerry2.setWeight(1050);
-BlueBerry2.setName("Bluberry 2");
+BlueBerry2.weight=1050;
+BlueBerry2.Name="Bluberry 2";
 
 var Carnberry1 = Object.create(CranBerry);
-Carnberry1.setWeight(1000);
-Carnberry1.setName("Carnberry 1");
+Carnberry1.weight=1000;
+Carnberry1.Name="Carnberry 1";
 
 var Carnberry2 = Object.create(CranBerry);
-Carnberry2.setWeight(1500);
-Carnberry2.setName("Carnberry 2");
+Carnberry2.weight=1500;
+Carnberry2.Name="Carnberry 2";
 
 
 //----------------------------Tests-----------------------------
 
-
+console.log("-------------METHOD OVERRIDE TEST-----------------------\n")
 console.log(Fruit.getShape())
 console.log(apple1.getShape())
 console.log(Banana1.getShape())
 console.log(Berry.getShape())
+console.log(BlueBerry.getShape())
 
-console.log("------------------------------------")
+console.log("\n-------------ITERATE TEST-----------------------")
 var treeExample = Object.create(FruitTree);
-treeExample.insert(apple1);
-treeExample.insert(apple2);
-treeExample.insert(Avocadro1);
-treeExample.insert(Avocadro2);
-treeExample.insert(Banana1);
-treeExample.insert(Banana2);
-treeExample.insert(Plantain1);
-treeExample.insert(Plantain2);
-treeExample.insert(BlueBerry1);
-treeExample.insert(BlueBerry2);
-treeExample.insert(Carnberry1);
-treeExample.insert(Carnberry2);
-
-//console.log(BlueBerry.getShape())
+treeExample.insertFruit(apple1);
+treeExample.insertFruit(apple2);
+treeExample.insertFruit(Avocadro1);
+treeExample.insertFruit(Avocadro2);
+treeExample.insertFruit(Banana1);
+treeExample.insertFruit(Banana2);
+treeExample.insertFruit(Plantain1);
+treeExample.insertFruit(Plantain2);
+treeExample.insertFruit(BlueBerry1);
+treeExample.insertFruit(BlueBerry2);
+treeExample.insertFruit(Carnberry1);
+treeExample.insertFruit(Carnberry2);
 
 treeExample.iterate()
-console.log("------------------------------------")
-treeExample.filterByType(Avocadro);
-console.log("------------------------------------")
+
+console.log("\n-------------FILTER BY TYPE TEST-----------------------")
+treeExample.filterByType(Berry);
+
+console.log("\n-------------FILTER BY WEIGHT TEST----------------------")
 treeExample.filterByWeight(200);
-console.log("------------------------------------")
-treeExample.magnifyByType(Berry,50);
-console.log("------------------------------------")
+
+console.log("\n------------MAGNIFY BY TYPE TEST------------------------")
+
+treeExample.magnifyByType(Avocadro,500);
+
+treeExample.iterate()
+
+console.log("\n------------FIND HEVIEST TEST------------------------")
 temp=treeExample.findHeaviest()
-console.log(temp.getName()+" -> "+temp.getWeight())
-console.log("------------------------------------")
+printer.print(temp)
+console.log("\n------------FIND LIGHTEST TEST------------------------")
 temp=treeExample.findLightest()
-console.log(temp.getName()+" -> "+temp.getWeight())
+printer.print(temp)
 console.log("------------------------------------")
 
